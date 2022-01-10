@@ -1,0 +1,4 @@
+| $('#like_area-#{@post.id}').html("#{j render('posts/unlike', post: @post)}")
+/    $はDOM構造を読み終わってから発火するという意味を持つ。
+/    このコードで_like_area.html.slimの'#like_area-#{@post.id}'が.html("#{j render('posts/unlike', post: @post)}")に置き換わる。
+/    いいねをしたら_unlike.html.slimが表示されハートに色が付いた状態になる。
